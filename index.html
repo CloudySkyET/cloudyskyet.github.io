@@ -3,12 +3,12 @@
   <meta charset="utf-8">
   <title>欢迎来访 || CloudySky</title>
   <div class = main>
-    <p>我的链接：</p>
-    <a href="https://cloudyskyet.github.io/Home" target="_blank">我的主站</a>
-    <p>这里放一些与学术无关的东西</p>
-    <a href = "https://cloudyskyet.github.io/Blog">我的博客</a>
-    <p>这里会在合适的时候放与学术有关的东西</p>
+    <p class = Top>CloudySky</p>
     <img class = avatar src = "https://gravatar.loli.net/avatar/242fc34aadd06c79efa2e3190cc45afc?d=mm&s=256">
+    <a href = "https://cloudyskyet.github.io/Home" target="_blank" class = title>我的主站</a>
+    <p class = description>这里放一些与学术无关的东西</p>
+    <a href = "https://cloudyskyet.github.io/Blog" target="_blank" class = title>我的博客</a>
+    <p class = description>这里会在合适的时候放与学术有关的东西</p>
   </div>
 </body>
 
@@ -24,19 +24,42 @@ body {
 }
 
 .main {
-  font-size: 24px;
-  font-family: cursive;
   background-color: #ffffff77;
-  text-align: center;
   border-radius: 25px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-left: 10px;
+  min-height: 326px;
+  max-width: 720px;
+  min-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main .avatar {
-	width: 70px;
-	height: 70px;
+	width: 256px;
+	height: 256px;
 	border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+}
+
+.main .Top {
+  font-size: 28px;
+  text-align: center;
+}
+
+.main .title {
+  font-size: 28px;
+  font-family: cursive;
+  background-image: linear-gradient(to right, black, red);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.main .description {
+  font-size: 24px;
+  font-family: cursive;
+  padding-bottom: 50px;
 }
 
 </style>
