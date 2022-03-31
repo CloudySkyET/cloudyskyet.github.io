@@ -2,13 +2,15 @@
 <body>
   <meta charset="utf-8">
   <title>欢迎来访 || CloudySky</title>
-  <div class = main>
-    <p class = Top>CloudySky</p>
-    <img class = avatar src = "https://gravatar.loli.net/avatar/242fc34aadd06c79efa2e3190cc45afc?d=mm&s=256">
-    <a href = "https://cloudyskyet.github.io/Home" target="_blank" class = title>我的主站</a>
-    <p class = description>这里放一些与学术无关的东西</p>
-    <a href = "https://cloudyskyet.github.io/Blog" target="_blank" class = title>我的博客</a>
-    <p class = description>这里会在合适的时候放与学术有关的东西</p>
+  <div class = asdf>
+    <div class = main>
+      <h1 class = Top>CloudySky</h1>
+      <img class = avatar src = "https://avatars.githubusercontent.com/u/89725506?v=4">
+      <a href = "https://cloudyskyet.github.io/Home" target="_blank" class = title>我的主站</a>
+      <p class = description>这里放一些与学术无关的东西</p>
+      <a href = "https://cloudyskyet.github.io/Blog" target="_blank" class = title>我的博客</a>
+      <p class = description>这里会在合适的时候放与学术有关的东西</p>
+    </div>
   </div>
 </body>
 
@@ -22,16 +24,18 @@ body {
   background-position: center;
   background-attachment: fixed;
 }
+.asdf {
+  height: 100%;
+  display: flex;
+}
 
 .main {
-  background-color: #ffffff77;
-  border-radius: 25px;
-  padding-left: 10px;
+  background-color: #141d24;
+  color: rgba(255, 255, 255, 0.87);
+  padding: 10px;
   min-height: 326px;
-  max-width: 720px;
-  min-width: 720px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 720px;
+  margin: auto;
 }
 
 .main .avatar {
@@ -45,11 +49,18 @@ body {
 .main .Top {
   font-size: 28px;
   text-align: center;
+  margin: 0;
 }
 
 .main .title {
   font-size: 28px;
   font-family: cursive;
+  color: darkturquoise;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.main .title:hover {
   background-image: linear-gradient(to right, black, red);
   background-clip: text;
   -webkit-background-clip: text;
@@ -59,7 +70,6 @@ body {
 .main .description {
   font-size: 24px;
   font-family: cursive;
-  padding-bottom: 50px;
 }
 
 </style>
